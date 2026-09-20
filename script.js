@@ -15,13 +15,14 @@
 
   const reveal = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
+    document.documentElement.classList.add('js-anim');
     const ro = new IntersectionObserver(entries => {
       entries.forEach(e => {
         if (e.isIntersecting) { e.target.classList.add('is-visible'); ro.unobserve(e.target); }
       });
     }, {threshold: .08});
     reveal.forEach(el => ro.observe(el));
-  } else reveal.forEach(el => el.classList.add('is-visible'));
+  }
 
   document.querySelectorAll('.track-cta').forEach(el => {
     el.addEventListener('click', () => {
