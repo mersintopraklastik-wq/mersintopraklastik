@@ -29,3 +29,7 @@ Premium kurumsal ana site + Google Ads odaklı hizmet sayfaları.
 - LocalBusiness + TireShop additionalType JSON-LD
 
 Not: Google Ads / GA4 ölçümü için gerçek Google tag ID ve conversion label bilgileri siteye ayrıca bağlanmalıdır. Google yorumları da uydurulmamış, Google profilinden görüntülenmeye yönlendirilmiştir.
+
+
+## Logo
+Unified Mersin Toprak Lastik + Goodyear Ana Bayi lockup added as `assets/mersin-toprak-goodyear-lockup.png`.
