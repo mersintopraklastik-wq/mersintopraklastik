@@ -128,3 +128,12 @@ main{display:block;margin:0;padding:0;}
 
 /* Keep the shop photo visible while preserving readable hero copy */
 .hero-shade{background:linear-gradient(180deg,rgba(2,10,21,.24) 0%,rgba(2,10,21,0) 18%),linear-gradient(100deg,rgba(4,15,30,.82) 0%,rgba(5,20,38,.64) 32%,rgba(6,24,44,.28) 60%,rgba(6,24,44,.04) 100%)}
+
+/* Homepage FAQ and verified Google review display */
+.review-visual-real{grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr;gap:10px;min-height:0;border:0;background:transparent;overflow:visible}
+.review-visual-real .review-score{grid-column:1/-1;min-height:108px;padding:20px 24px;border-radius:15px}
+.review-visual-real .review-score strong{font:800 18px Manrope,sans-serif}
+.review-visual-real .review-quote{min-height:190px;margin:0;padding:22px;border-radius:15px;display:flex;flex-direction:column;justify-content:space-between;font:500 13px/1.7 Inter,sans-serif}
+.review-visual-real .review-quote p{margin:0}.review-visual-real .review-quote small{display:block;margin-top:14px;color:#c5d2e2;font:700 10px Inter,sans-serif}
+.home-faq{background:#f6f8fa}.home-faq .section-top{align-items:end}.home-faq .section-top h2{font:800 clamp(30px,4vw,40px)/1.1 Manrope,sans-serif;letter-spacing:-.04em;margin:0}.faq-list{display:grid;gap:10px;max-width:940px;margin:0 auto}.faq-item{border:1px solid #e0e7ee;border-radius:12px;background:#fff;overflow:hidden}.faq-item summary{position:relative;padding:17px 48px 17px 18px;list-style:none;color:var(--navy);font:800 14px/1.45 Manrope,sans-serif;cursor:pointer}.faq-item summary::-webkit-details-marker{display:none}.faq-item summary:after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);color:#0b5a93;font:700 22px Inter,sans-serif}.faq-item[open] summary:after{content:"−"}.faq-item>p{margin:0;padding:0 18px 18px;color:var(--muted);font-size:13px;line-height:1.7}.faq-item a{color:#0b5a93;font-weight:700}
+@media(max-width:520px){.review-visual-real{grid-template-columns:1fr}.review-visual-real .review-score{grid-column:auto}.review-visual-real .review-quote{min-height:150px;padding:20px}.faq-item summary{font-size:13px;padding:15px 42px 15px 15px}}
