@@ -25,6 +25,23 @@
 @media(max-width:820px){.tire-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.tire-catalog .section-top{display:block}.tire-catalog .section-top p{margin-top:12px}.tire-help{align-items:flex-start;flex-direction:column}.vehicle-fields{grid-template-columns:1fr 1fr}.vehicle-search .btn{width:100%}}
 @media(max-width:820px){.size-guide{grid-template-columns:1fr;gap:20px}.shop-info{grid-template-columns:1fr 1fr}.shop-info .btn{justify-self:start}}
 @media(max-width:560px){.tire-hero{padding:60px 0 54px}.tire-hero h1{font-size:37px}.tire-search{align-items:stretch;flex-direction:column}.tire-search input{padding:12px 10px}.tire-search .btn{width:100%}.tire-catalog .section-top h2{font-size:29px}.tire-cards,.tire-how-grid{grid-template-columns:1fr}.tire-art{height:165px}.tire-card-body{padding:18px}.season-filter{margin-top:0}.tire-proof{gap:11px}.tire-help .btn{width:100%;justify-content:center}.size-guide{padding:17px}.size-guide-art{min-height:165px}.size-guide-copy h3{font-size:22px}.shop-info{grid-template-columns:1fr;gap:14px;padding:20px}.shop-info .btn{width:100%}.vehicle-search{padding:13px}.vehicle-fields{grid-template-columns:1fr}.vehicle-search .btn{width:100%}}
+.size-guide-photo{position:relative;min-height:285px;aspect-ratio:1.5;border-radius:13px;overflow:hidden;background:#0a2340}
+.size-guide-photo img{display:block;width:100%;height:100%;min-height:285px;object-fit:cover}
+.sidewall-label{position:absolute;left:4%;top:6%;z-index:2;background:#ffc928;color:#061a33;border-radius:5px;padding:8px 10px;font:800 10px Inter,sans-serif;letter-spacing:.06em}
+.sidewall-marker{position:absolute;left:37%;top:57%;width:40px;height:40px;border:3px solid #ffc928;border-radius:50%;box-shadow:0 0 0 6px rgba(255,201,40,.22);z-index:2}
+.sidewall-pointer{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}
+.sidewall-pointer path{fill:none;stroke:#ffc928;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.sidewall-pointer circle{fill:#ffc928;stroke:#fff;stroke-width:3}
+.size-code-card{position:absolute;right:4%;top:29%;z-index:3;padding:12px 15px;border-radius:10px;background:#fff;color:#061a33;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.size-code-card small,.size-code-card strong{display:block}
+.size-code-card small{font:800 9px Inter,sans-serif;letter-spacing:.05em;color:#53677c;margin-bottom:4px}
+.size-code-card strong{font:800 22px Manrope,sans-serif;white-space:nowrap}
+.photo-caption{position:absolute;left:3%;bottom:3%;z-index:3;padding:6px 8px;border-radius:5px;background:rgba(6,26,51,.85);color:#fff;font:600 9px Inter,sans-serif}
+.size-guide-steps{padding-left:22px;margin:14px 0;color:#34465a;font:400 12px/1.55 Inter,sans-serif}
+.size-guide-steps li{padding:0 0 8px 3px}
+.size-guide-steps b{color:#061a33}
+.guide-whatsapp{margin-top:4px}
+@media(max-width:560px){.size-guide-photo{min-height:220px;aspect-ratio:1.35}.size-guide-photo img{min-height:220px}.size-code-card{top:34%;right:3%;padding:9px 11px}.size-code-card strong{font-size:18px}.size-code-card small{font-size:8px}.sidewall-marker{width:30px;height:30px}.size-guide-steps{font-size:12px}.guide-whatsapp{width:100%;justify-content:center}}
 </style>
 </head>
 <body>
@@ -72,8 +89,28 @@
   <div class="tire-help"><div><b>Başka bir ebat veya Goodyear modeli mi arıyorsunuz?</b><p>Aracınızın lastik ölçüsünü gönderin, uygun seçenekler ve fiyatı birlikte bulalım.</p></div><a class="btn btn-navy price-ask track-cta" data-cta="whatsapp" data-model="aradığım başka bir lastik" href="https://wa.me/905421387242" target="_blank" rel="noopener">WhatsApp’tan fiyat sor →</a></div>
 </div></section>
 <section class="tire-how section"><div class="container"><div class="section-top"><div><span class="kicker">FİYAT SORMAK KOLAY</span><h2>Üç adımda doğru ebat.</h2></div><p>Ebatınızı biliyorsanız girin; bilmiyorsanız aracınızın bilgilerini bize gönderin.</p></div><div class="tire-how-grid"><article class="tire-how-card"><span>01</span><h3>Ebatı yazın</h3><p>Lastiğin yanak kısmındaki 205/55 R16 gibi ölçüyü girin.</p></article><article class="tire-how-card"><span>02</span><h3>Modeli seçin</h3><p>Yaz, kış veya dört mevsim Goodyear seçeneğine göz atın.</p></article><article class="tire-how-card"><span>03</span><h3>WhatsApp’tan fiyat sorun</h3><p>Mesajınız ebat ve seçtiğiniz model bilgisiyle hazır açılır.</p></article></div>
-  <div class="size-guide"><div class="size-guide-art" role="img" aria-label="Lastiğin yanağında 205/55 R16 ebatının yerini gösteren çizim"><svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="tire" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#293746"/><stop offset="1" stop-color="#101b28"/></linearGradient></defs><ellipse cx="160" cy="111" rx="114" ry="91" fill="url(#tire)" stroke="#8798a9" stroke-width="3"/><ellipse cx="160" cy="111" rx="73" ry="57" fill="#dfe6ec" stroke="#aab7c4" stroke-width="5"/><ellipse cx="160" cy="111" rx="39" ry="31" fill="#18324d"/><path d="M160 20v17m0 148v17M46 111h17m194 0h17M79 46l13 13m136 104 13 13m0-130-13 13M92 163l-13 13" stroke="#67798d" stroke-width="7" stroke-linecap="round"/><path d="M231 73 300 47h88" fill="none" stroke="#ffc928" stroke-width="3"/><circle cx="231" cy="73" r="5" fill="#ffc928"/><rect x="278" y="67" width="127" height="42" rx="8" fill="#fff"/><text x="291" y="94" fill="#061a33" font-family="Arial,sans-serif" font-size="21" font-weight="700">205/55 R16</text><text x="279" y="137" fill="#d4dfeb" font-family="Arial,sans-serif" font-size="12">Ölçü, lastiğin yanak</text><text x="279" y="154" fill="#d4dfeb" font-family="Arial,sans-serif" font-size="12">kısmında yazar.</text></svg></div><div class="size-guide-copy"><span class="kicker">EBATINIZI BULUN</span><h3>Lastiğin yanak kısmındaki yazıya bakın.</h3><p>Aracınızın lastiğinin dış yan yüzeyinde, kabartmalı olarak yazan ölçüyü bulun. Örnekteki gibi üç parçalı bir sayı göreceksiniz.</p><span class="size-example">205/55 R16 <small>örnek ebat</small></span><p class="size-guide-note">Emin değilseniz lastiğin yanak fotoğrafını veya aracınızın marka, model ve yılını WhatsApp’tan gönderin; birlikte kontrol edelim.</p></div></div>
-  <div class="shop-info" aria-label="Mersin Toprak Lastik iletişim bilgileri"><div><span class="kicker">MAĞAZAMIZ</span><strong>Mersin Toprak Lastik</strong><span>Barış, Gazi Mustafa Kemal Blv. No:209/A<br>Akdeniz / Mersin</span></div><div><strong>Telefon</strong><a class="shop-phone" href="tel:+905421387242">0542 138 72 42</a><a class="shop-phone" href="tel:+905333668685">0533 366 86 85</a></div><div><strong>Çalışma saatleri</strong><span>Pazartesi–Cumartesi<br>07:30–18:30 · Pazar kapalı</span></div><a class="btn btn-yellow" href="https://www.google.com/maps/place/Mersin+Toprak+Lastik-Goodyear+Yetkili+Bayii/@36.8005869,34.61231,559m/data=!3m2!1e3!4b1!4m6!3m5!1s0x1527f30176b6448f:0xa82f6b3eb2f2e875!8m2!3d36.8005826!4d34.6148849!16s%2Fg%2F11xtbkv9j8" target="_blank" rel="noopener">Yol tarifi al ↗</a></div>
+  <div class="size-guide">
+    <div class="size-guide-photo">
+      <img src="/assets/tire-sidewall-guide.webp" alt="Temsili otomobil lastiği fotoğrafında, ebat kodunun bulunduğu yan yüzey işaretleniyor" width="1536" height="1024" loading="lazy">
+      <span class="sidewall-label">LASTİĞİN YAN YÜZÜ</span>
+      <span class="sidewall-marker" aria-hidden="true"></span>
+      <svg class="sidewall-pointer" viewBox="0 0 1000 667" preserveAspectRatio="none" aria-hidden="true"><path d="M390 420 L690 260 L830 260"/><circle cx="390" cy="420" r="10"/></svg>
+      <div class="size-code-card"><small>YANAKTAKİ ÖRNEK EBAT</small><strong>205/55 R16</strong></div>
+      <span class="photo-caption">Görsel temsili · Ebat kodu lastiğin yan yüzünde kabartmalıdır.</span>
+    </div>
+    <div class="size-guide-copy">
+      <span class="kicker">EBATI BULMANIN KOLAY YOLU</span>
+      <h3>Lastiğin yan yüzündeki yazılara bakın.</h3>
+      <p>Aracın yanına geçin. Jantın çevresindeki lastik yüzeyinde kabartmalı harf ve sayıları arayın; ölçü 205/55 R16 gibi görünür.</p>
+      <ol class="size-guide-steps">
+        <li><b>Lastiğin yanına bakın.</b> Yola değen desenli kısım değil, jantın çevresindeki yan yüzey.</li>
+        <li><b>Örnek koda benzer yazıyı bulun.</b> 205/55 R16 gibi sayılar lastiğin üzerinde kabartmalıdır.</li>
+        <li><b>Fotoğrafını çekip gönderin.</b> Kodu okuyamıyorsanız ebat tahmin etmeyin.</li>
+      </ol>
+      <p class="size-guide-note">Dış yüzde göremiyorsanız lastiğin diğer yanına bakın. Yine bulamazsanız araç marka, model ve yılını gönderin; ebatı birlikte teyit edelim.</p>
+      <a class="btn btn-yellow guide-whatsapp" href="https://wa.me/905421387242?text=Merhaba%2C%20lastik%20ebat%C4%B1m%C4%B1%20bulam%C4%B1yorum.%20Foto%C4%9Fraf%C4%B1n%C4%B1%20g%C3%B6nderip%20ebat%C4%B1%20teyit%20ettirebilir%20miyim%3F" target="_blank" rel="noopener">Fotoğrafı WhatsApp’tan gönder →</a>
+    </div>
+  </div>  <div class="shop-info" aria-label="Mersin Toprak Lastik iletişim bilgileri"><div><span class="kicker">MAĞAZAMIZ</span><strong>Mersin Toprak Lastik</strong><span>Barış, Gazi Mustafa Kemal Blv. No:209/A<br>Akdeniz / Mersin</span></div><div><strong>Telefon</strong><a class="shop-phone" href="tel:+905421387242">0542 138 72 42</a><a class="shop-phone" href="tel:+905333668685">0533 366 86 85</a></div><div><strong>Çalışma saatleri</strong><span>Pazartesi–Cumartesi<br>07:30–18:30 · Pazar kapalı</span></div><a class="btn btn-yellow" href="https://www.google.com/maps/place/Mersin+Toprak+Lastik-Goodyear+Yetkili+Bayii/@36.8005869,34.61231,559m/data=!3m2!1e3!4b1!4m6!3m5!1s0x1527f30176b6448f:0xa82f6b3eb2f2e875!8m2!3d36.8005826!4d34.6148849!16s%2Fg%2F11xtbkv9j8" target="_blank" rel="noopener">Yol tarifi al ↗</a></div>
   </div></section>
 </main>
 <section class="quick-cta"><div class="container quick-cta-inner"><div><span>DAİMA YOLUNDA</span><h2>Lastik fiyatını bize sorun.</h2></div><div class="quick-cta-actions"><a class="btn btn-yellow track-cta" data-cta="whatsapp" href="https://wa.me/905421387242" target="_blank" rel="noopener">WhatsApp’tan Yaz</a><a class="btn btn-ghost track-cta" data-cta="phone" href="tel:+905421387242">Hemen Ara</a></div></div></section>
