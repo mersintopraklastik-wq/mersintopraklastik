@@ -137,3 +137,24 @@ main{display:block;margin:0;padding:0;}
 .review-visual-real .review-quote p{margin:0}.review-visual-real .review-quote small{display:block;margin-top:14px;color:#c5d2e2;font:700 10px Inter,sans-serif}
 .home-faq{background:#f6f8fa}.home-faq .section-top{align-items:end}.home-faq .section-top h2{font:800 clamp(30px,4vw,40px)/1.1 Manrope,sans-serif;letter-spacing:-.04em;margin:0}.faq-list{display:grid;gap:10px;max-width:940px;margin:0 auto}.faq-item{border:1px solid #e0e7ee;border-radius:12px;background:#fff;overflow:hidden}.faq-item summary{position:relative;padding:17px 48px 17px 18px;list-style:none;color:var(--navy);font:800 14px/1.45 Manrope,sans-serif;cursor:pointer}.faq-item summary::-webkit-details-marker{display:none}.faq-item summary:after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);color:#0b5a93;font:700 22px Inter,sans-serif}.faq-item[open] summary:after{content:"−"}.faq-item>p{margin:0;padding:0 18px 18px;color:var(--muted);font-size:13px;line-height:1.7}.faq-item a{color:#0b5a93;font-weight:700}
 @media(max-width:520px){.review-visual-real{grid-template-columns:1fr}.review-visual-real .review-score{grid-column:auto}.review-visual-real .review-quote{min-height:150px;padding:20px}.faq-item summary{font-size:13px;padding:15px 42px 15px 15px}}
+
+/* Clearer homepage reviews and FAQ presentation */
+.reviews .review-layout{grid-template-columns:minmax(260px,.78fr) minmax(0,1.22fr);gap:42px;align-items:center}
+.reviews .review-intro{padding:0}
+.reviews .review-rating{display:flex;align-items:center;gap:8px;margin:20px 0 19px;color:var(--navy);font:800 17px Manrope,sans-serif}
+.reviews .review-rating>span{color:#e5a900;font-size:15px;letter-spacing:1px}
+.reviews .review-rating small{color:var(--muted);font:500 12px Inter,sans-serif}
+.reviews .review-visual-real{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto;gap:14px;min-width:0}
+.reviews .review-visual-real .review-quote{min-width:0;min-height:230px;padding:24px;border:1px solid rgba(255,255,255,.08);border-radius:16px;display:flex;flex-direction:column;justify-content:flex-start;gap:19px;box-shadow:0 12px 30px rgba(6,26,51,.1);font:500 14px/1.7 Inter,sans-serif}
+.reviews .review-visual-real .review-quote p{margin:0;overflow-wrap:anywhere}
+.reviews .review-google-label{color:var(--yellow);font:800 9px/1 Inter,sans-serif;letter-spacing:.16em}
+.home-faq{background:#f5f7fa}
+.home-faq .section-top{margin-bottom:30px}
+.home-faq .faq-list{width:min(100%,900px);max-width:900px;margin:0;gap:11px}
+.home-faq .faq-item{border:1px solid #dfe6ee;border-radius:13px;background:#fff;box-shadow:0 4px 15px rgba(6,26,51,.035);transition:border-color .2s,box-shadow .2s}
+.home-faq .faq-item:hover,.home-faq .faq-item[open]{border-color:#b8c7d8;box-shadow:0 8px 22px rgba(6,26,51,.07)}
+.home-faq .faq-item summary{display:block;padding:19px 54px 19px 20px;font-size:14px}
+.home-faq .faq-item summary:before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:3px;border-radius:3px;background:var(--yellow);opacity:0;transition:opacity .2s}
+.home-faq .faq-item[open] summary:before{opacity:1}
+.home-faq .faq-item>p{max-width:760px;padding:0 54px 20px 20px}
+@media(max-width:700px){.reviews .review-layout{grid-template-columns:1fr;gap:25px}.reviews .review-intro{padding:0}.reviews .review-visual-real{grid-template-columns:1fr}.reviews .review-visual-real .review-quote{min-height:0;padding:21px}.home-faq .section-top{display:block}.home-faq .section-top>p{margin-top:12px}.home-faq .faq-list{width:100%}.home-faq .faq-item summary{padding:17px 47px 17px 17px}.home-faq .faq-item>p{padding:0 20px 18px 17px}}
